@@ -10,7 +10,7 @@ const Home = () => (
     />
     <div className="flex flex-col items-center justify-center h-screen">
       <div className="mb-6 flex flex-col items-center">
-        <img className="rounded-full border-2 border-purple-600 hover:border-red-500 duration-500 transition w-64 h-64" src={require('../public/cover.jpg')}></img>
+        <img className="rounded-full border-2 border-purple-600 hover:border-red-500 duration-500 transition" style={{ width: 200, height: 200 }} src={require('../public/cover.jpg')}></img>
         <h1 className="pt-2 mb-2">The Piano School</h1>
         <span className="break-normal mx-12 text-center">
           Hello, my name is Stephanie and I teach Piano. Click schedule to see when you can <span className="underline text-white font-bold hover:text-purple-500"><a href={schedule}>schedule</a></span> a lesson. <br/>
