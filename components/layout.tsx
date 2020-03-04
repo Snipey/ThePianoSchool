@@ -10,7 +10,7 @@ const Layout: React.FC = ({ children }) => {
 
   return (
     <div className={theme}>
-      <Header />
+      {/* <Header /> */}
       {/* <div
         className="absolute bottom-0 left-0 mb-4 ml-4 cursor-pointer btn btn-secondary"
         onClick={toggleTheme}

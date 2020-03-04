@@ -3,24 +3,31 @@ import Helmet from 'react-helmet'
 const Home = () => (
   <Layout>
     <Helmet
-      title="Home | Odin Media"
-      meta={[{ property: 'og:title', content: 'Home' }]}
+      title="Welcome | The Piano School"
+      meta={[{ property: 'og:title', content: 'Welcome' }]}
     />
     <div className="flex flex-col items-center justify-center h-screen">
-      <h1>Odin Media</h1>
-      <h2>The Perfect Media Sever</h2>
+      <div className="mb-6 flex flex-col items-center">
+        <img className="rounded-full border-2 border-purple-600 hover:border-red-500 duration-500 transition" src="https://picsum.photos/200/200"></img>
+        <h1 className="pt-2">The Piano School</h1>
+      </div>
 
-      <div className="flex mt-8">
-        <a href="https://github.com/OdinMedia" className="mx-4">
-          <button type="button" className="btn btn-primary">
-            Read More
-          </button>
-        </a>
-        <a href="https://github.com/OdinMedia" className="mx-4">
-          <button type="button" className="btn btn-secondary">
-            Github
-          </button>
-        </a>
+      <ul className="flex-col w-1/4">
+        <li className="flex-1 mt-4">
+          <a className="text-center block border border-purple-500 rounded py-2 px-4 bg-purple-500 hover:bg-purple-700 text-white" 
+              href="https://calendar.google.com/calendar/selfsched?sstoken=UUVmdjgzY21fdmxsfGRlZmF1bHR8MTQ0NTIyZWRjMWExOTcwNGFhOTc4ZDhkYTcxN2UxZWM">
+                Schedule
+          </a>
+        </li>
+        <li className="flex-1 mt-4">
+          <a className="text-center block border border-purple-500 rounded py-2 px-4 bg-purple-500 hover:bg-purple-700 text-white" 
+              href="https://forms.gle/vo11ir5vfmN35NhD7">
+                Contact
+          </a>
+        </li>
+      </ul>
+      <div className="flex items-center justify-center mt-6">
+        <pre className="inline-block bg-gray-800 px-2 rounded-lg">Made with <span className="text-red-500">♥</span> by <a href="https://snipey.dev" className="hover:underline duration-500 transition">Stephen F</a></pre>
       </div>
     </div>
   </Layout>
