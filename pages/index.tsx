@@ -13,23 +13,23 @@ const Home = () => (
         <img className="rounded-full border-2 border-purple-600 hover:border-red-500 duration-500 transition" style={{ width: 200, height: 200 }} src={require('../public/cover.jpg')}></img>
         <h1 className="pt-2 mb-2">The Piano School</h1>
         <span className="break-normal mx-12 text-center">
-          Hello, my name is Stephanie and I teach Piano. Click schedule to see when you can <span className="underline text-white font-bold hover:text-purple-500"><a href={schedule}>schedule</a></span> a lesson. <br/>
-           <b className="text-red-500 underline">Have not booked with me before?</b> <br/>
+          Hello, my name is Stephanie and I teach Piano. Click schedule to see when you can <span className="underline text-white font-bold hover:text-purple-500"><a href={schedule}>schedule</a></span> a lesson. <br />
+          <b className="text-red-500 underline">Have you booked with me before?</b> <br />
             Click the contact link and fill out the form for more information on what I offer.
         </span>
       </div>
 
       <ul className="flex-col md:w-1/4 w-3/4">
         <li className="flex-1 mt-4">
-          <a className="text-center block border border-purple-500 rounded py-2 px-4 bg-purple-500 hover:bg-purple-700 text-white" 
-              href={schedule}>
-                Schedule
+          <a className="text-center block border border-purple-500 rounded py-2 px-4 bg-purple-500 hover:bg-purple-700 text-white"
+            href={schedule}>
+            Schedule
           </a>
         </li>
         <li className="flex-1 mt-4">
-          <a className="text-center block border border-purple-500 rounded py-2 px-4 bg-purple-500 hover:bg-purple-700 text-white" 
-              href={contact}>
-                Contact
+          <a className="text-center block border border-purple-500 rounded py-2 px-4 bg-purple-500 hover:bg-purple-700 text-white"
+            href={contact}>
+            Contact
           </a>
         </li>
       </ul>
